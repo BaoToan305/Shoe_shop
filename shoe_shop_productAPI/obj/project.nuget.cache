@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lrg6OfsjOprKmclajI/yUudESYCn6WML+9TYG8ivMBTIMDu4umkjABc98Dt9dlvmGQvhcIFfkwrq+L6iMDHVDg==",
+  "dgSpecHash": "o0zBswYb28owoDmCTg52zOfHKTHY1HOXv7EGYCe6urmjPVk9xle0CiWDXn9i625aeSaBQGeCA6tb9TQNuj/YOg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\shoe_shop_solution\\shoe_shop_productAPI\\shoe_shop_productAPI.csproj",
+  "projectFilePath": "D:\\Projects\\Shoe_shop\\shoe_shop_productAPI\\shoe_shop_productAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caiba\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
@@ -116,6 +116,7 @@
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\caiba\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.16\\microsoft.visualstudio.web.codegeneration.6.0.16.nupkg.sha512",
     "C:\\Users\\caiba\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.16\\microsoft.visualstudio.web.codegeneration.core.6.0.16.nupkg.sha512",

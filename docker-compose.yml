@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  shoe_shop_productapi:
+    image: ${DOCKER_REGISTRY-}shoeshopproductapi
+    build:
+      context: .
+      dockerfile: shoe_shop_productAPI\Dockerfile

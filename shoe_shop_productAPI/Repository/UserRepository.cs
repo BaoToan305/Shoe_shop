@@ -32,10 +32,17 @@ namespace shoe_shop_productAPI.Repository
             return user;
         }
 
-        public async Task<User> GetUserToRegisterAsync(string name)
+        public async Task<User?> GetUserToRegisterAsync(string userName)
         {
-            User user = await _db.Users.FirstAsync(x => x.user_name == name);
-            return _mapper.Map<User>(user);
+            const string sql = "sp_get_user";
+            using IDbConnection connection = _dapperContext.CreateConnection();
+            var user = await connection.QueryAsync(sql, new { userName }, commandType: CommandType.StoredProcedure);
+            if(user.Count() > 0)
+            {
+                return (User?)user;
+
+            }
+            else { return null; }
         }
         
         public async Task<int> RegisterUser(UserDto userDto)

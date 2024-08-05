@@ -1,0 +1,18 @@
+name: dockercompose13799471633259050553
+services:
+  shoe_shop_productapi:
+    build:
+      context: D:\Projects\Shoe_shop
+      dockerfile: shoe_shop_productAPI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: shoeshopproductapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose13799471633259050553_default

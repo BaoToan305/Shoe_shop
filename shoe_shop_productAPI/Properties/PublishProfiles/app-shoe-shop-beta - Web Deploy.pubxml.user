@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAePaHgtCumkqb2U1biETP6QAAAAACAAAAAAAQZgAAAAEAACAAAAA6/LoFuIET9OHWrN2UmkTfy5DOD8XJSXRG+kw2MsBfpwAAAAAOgAAAAAIAACAAAADvPLmC6sOEBmVffurowA4tqWqrk5tsSzcv5KxACZSK7iAAAADaZXWP3a1qVo1b7rwlwt1gK68T6T3fZfrbkQmPL0Yp4UAAAADSEJmiq671ns2A/m+SbOKZR66n9k8H6G5mQLc4+8KMLnCanc89ttb45fnXITKCRSLIWIKWZP5bhIPoKYd8zdV6</EncryptedPassword>
+    <History>True|2024-08-05T15:03:56.0066231Z;False|2024-08-05T22:03:10.8477573+07:00;True|2024-08-05T20:07:37.6455903+07:00;False|2024-08-05T19:41:01.7405057+07:00;False|2024-08-05T19:38:45.9881064+07:00;False|2024-08-05T19:36:01.6571389+07:00;False|2024-08-05T19:33:53.7605526+07:00;False|2024-08-03T00:08:08.5822932+07:00;False|2024-08-03T00:02:14.8040079+07:00;False|2024-08-02T23:58:51.9435495+07:00;False|2024-08-02T23:45:56.4330842+07:00;False|2024-08-02T23:37:18.9911584+07:00;False|2024-08-02T23:23:38.9433250+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=shoe-shop-beta.mysql.database.azure.com%3bDatabase=shoe_shop_beta%3bUser=baotoan3005%3bPassword=0000Abcd%40%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

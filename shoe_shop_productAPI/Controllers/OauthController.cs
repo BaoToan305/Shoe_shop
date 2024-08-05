@@ -29,7 +29,7 @@ namespace shoe_shop_productAPI.Controllers
                 if(userDto != null)
                 {
                     var user = _userRepository.GetUserToRegisterAsync(userDto.user_name);
-                    if(user != null)
+                    if(user.Result != null)
                     {
                         _response.Message = "Tên tài khoản đã được sử dụng";
                         _response.Status = (int)HttpStatusCode.BadRequest;
@@ -63,11 +63,10 @@ namespace shoe_shop_productAPI.Controllers
             {
                 var user = await _userRepository.GetUserToCheckAsync(userDtoLogin.user_name, userDtoLogin.user_password);
                 if (user != null)
-                {
-                    
+                {                    
                     List<string> roles = new List<string>
                     {
-                        user.user_role_name
+                        
                     };
 
                     user.jwt_token = _tokenRepository.CreateJWTToken(user, roles);
