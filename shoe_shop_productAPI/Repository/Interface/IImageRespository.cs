@@ -1,6 +1,6 @@
 ﻿using shoe_shop_productAPI.Models;
 
-namespace shoe_shop_productAPI.Repository
+namespace shoe_shop_productAPI.Repository.Interface
 {
     public interface IImageRespository
     {

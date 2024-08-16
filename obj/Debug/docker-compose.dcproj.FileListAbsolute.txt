@@ -32,3 +32,6 @@ D:\Projects\Shoe_shop\bin\Debug\shoe_shop_productAPI.pdb
 D:\Projects\Shoe_shop\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\Projects\Shoe_shop\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 D:\Projects\Shoe_shop\obj\Debug\docker-c.35A3FFBA.Up2Date
+D:\Projects\Shoe_shop\bin\Debug\RabbitMQ.Client.dll
+D:\Projects\Shoe_shop\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Shoe_shop\bin\Debug\System.Threading.Channels.dll

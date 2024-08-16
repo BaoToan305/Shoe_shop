@@ -2,8 +2,10 @@
 using Dapper;
 using Microsoft.EntityFrameworkCore;
 using shoe_shop_productAPI.DbContexts;
+using shoe_shop_productAPI.Helper;
 using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
+using shoe_shop_productAPI.Repository.Interface;
 using System.Data;
 
 namespace shoe_shop_productAPI.Repository
@@ -21,26 +23,18 @@ namespace shoe_shop_productAPI.Repository
             _dapperContext = dapperContext;
         }
 
-        public async Task<ProductDto> CreateProduct(ProductDto productDto)
+        public async Task<int> CreateProduct(ProductDto productDto)
         {
-            Product product = _mapper.Map<ProductDto, Product>(productDto);
-            _db.Products.Add(product);
-            await _db.SaveChangesAsync();
-            return _mapper.Map<Product, ProductDto>(product);
-        }
-
-        public async Task<ProductDto> GetProductById(int id)
-        {
-            Product product = await _db.Products.Where(x => x.product_id == id).FirstOrDefaultAsync() ?? throw new InvalidOperationException("Sản phẩm không tìm thấy");
-            return _mapper.Map<ProductDto>(product);
+            using IDbConnection connection = _dapperContext.CreateConnection();
+            int rowAffected = await connection.ExecuteAsync(StoreProceductLinks.SP_CREATE_PRODUCTS, productDto, commandType: CommandType.StoredProcedure);
+            return rowAffected;
         }
 
         public async Task<IEnumerable<ProductDto>> GetProducts(string keysearch)
         {
-            const string sp = "sp_keysearch_product";
             using IDbConnection connection = _dapperContext.CreateConnection();
             if (string.IsNullOrEmpty(keysearch)) { keysearch = ""; }
-            var products = await connection.QueryAsync<ProductDto>(sp, new { keysearch }, commandType: CommandType.StoredProcedure);
+            var products = await connection.QueryAsync<ProductDto>(StoreProceductLinks.SP_PRODUCTS, new { keysearch }, commandType: CommandType.StoredProcedure);
             return _mapper.Map<List<ProductDto>>(products);
         }
     }

@@ -303,3 +303,5 @@ D:\Projects\Shoe_shop\shoe_shop_productAPI\obj\Release\net6.0\refint\shoe_shop_p
 D:\Projects\Shoe_shop\shoe_shop_productAPI\obj\Release\net6.0\shoe_shop_productAPI.pdb
 D:\Projects\Shoe_shop\shoe_shop_productAPI\obj\Release\net6.0\shoe_shop_productAPI.genruntimeconfig.cache
 D:\Projects\Shoe_shop\shoe_shop_productAPI\obj\Release\net6.0\ref\shoe_shop_productAPI.dll
+D:\Projects\Shoe_shop\shoe_shop_productAPI\bin\Release\net6.0\RabbitMQ.Client.dll
+D:\Projects\Shoe_shop\shoe_shop_productAPI\bin\Release\net6.0\System.Threading.Channels.dll

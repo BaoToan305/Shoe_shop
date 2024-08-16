@@ -6,7 +6,9 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using shoe_shop_productAPI;
 using shoe_shop_productAPI.DbContexts;
+using shoe_shop_productAPI.RabbitMQ;
 using shoe_shop_productAPI.Repository;
+using shoe_shop_productAPI.Repository.Interface;
 using Swashbuckle.AspNetCore.Filters;
 using System.Security.Claims;
 using System.Text;
@@ -28,7 +30,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
     {
-        Description = "Standard Authorization header dont near using the Bearer scheme (\"{token}\")",
+        Description = "Standard Authorization header dont near using the Bearer scheme (\"Bearer {token}\")",
         In = ParameterLocation.Header,
         Scheme = "Bearer",
         Name = "Authorization",
@@ -37,52 +39,36 @@ builder.Services.AddSwaggerGen(options =>
 
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
     .AddJwtBearer(options =>
     {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
         {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
                 .GetBytes(builder.Configuration.GetSection("JWT:Token").Value)),
-            ValidateIssuer = false,
-            ValidateAudience = true,
-            ValidAudience = builder.Configuration["JWT:Audience"]
+            ValidAudience = builder.Configuration["JWT:Audience"],
+            ValidIssuer = builder.Configuration["JWT:Issuer"],
+            ClockSkew = TimeSpan.Zero
         };
-        options.Events = new JwtBearerEvents
-        {
-            OnTokenValidated = async context =>
-            {
-                var userService = context.HttpContext.RequestServices.GetRequiredService<IUserRepository>();
-                if (context.Principal.Identity.Name is not null)
-                {
-                    var userId = context.Principal.Identity.Name;
-                    if (userId is not null)
-                    {
-                        var user = await userService.GetUserByIdAsync(userId);
-
-                        if (user.user_role_name is not null)
-                        {
-                            var claims = new List<Claim>
-                                {
-                                    new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
-                                    new Claim(ClaimTypes.Role, user.user_role_name)
-                                };
-
-                            var appIdentity = new ClaimsIdentity(claims);
-                            context.Principal.AddIdentity(appIdentity);
-                        }
-                    }
-                }
-            }
-        };
+        
     });
 
 builder.Services.AddAuthorization(options =>
 {
-    options.AddPolicy("RequireAdminRole", policy => policy.RequireRole("Admin"));
-    options.AddPolicy("RequireUserRole", policy => policy.RequireRole("User"));
+    options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("UserOnly", policy => policy.RequireRole("User"));
 });
+
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -91,6 +77,7 @@ builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IImageRespository, LocalImageRespository>();
+builder.Services.AddScoped<IOrderDetailRespository, OrderDetailRespository>();
 builder.Services.AddControllers();
 var app = builder.Build();
 
@@ -100,8 +87,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseAuthorization();
-app.UseAuthentication();
+
 
 app.UseStaticFiles(new StaticFileOptions
 {
@@ -109,6 +95,15 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/Imagesv"
 });
 
+app.UseCors(builder => builder
+     .AllowAnyOrigin()
+     .AllowAnyMethod()
+     .AllowAnyHeader());
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapControllers();
+
 
 app.Run();

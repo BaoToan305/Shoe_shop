@@ -9,7 +9,6 @@ namespace shoe_shop_productAPI.DbContexts
 
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<RoleUser> RoleUser { get; set; }
         public DbSet<Image> Images { get; set; }
     }
 }

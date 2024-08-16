@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
-using shoe_shop_productAPI.Repository;
+using shoe_shop_productAPI.Repository.Interface;
 using shoe_shop_productAPI.Response;
 using System.Net;
 

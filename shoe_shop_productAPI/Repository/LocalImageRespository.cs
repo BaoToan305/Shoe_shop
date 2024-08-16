@@ -1,5 +1,6 @@
 ﻿using shoe_shop_productAPI.DbContexts;
 using shoe_shop_productAPI.Models;
+using shoe_shop_productAPI.Repository.Interface;
 
 namespace shoe_shop_productAPI.Repository
 {

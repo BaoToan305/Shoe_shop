@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
-using shoe_shop_productAPI.Repository;
+using shoe_shop_productAPI.Repository.Interface;
 using System.Net;
 
 namespace shoe_shop_productAPI.Controllers
@@ -12,46 +14,28 @@ namespace shoe_shop_productAPI.Controllers
     {
         protected ResponseDto _response;
         private IProductRepository _productRepository;
-
-        public ProductsController(IProductRepository productRepository)
+        private IMapper _mapper;
+        public ProductsController(IProductRepository productRepository, IMapper mapper)
         {
             _response = new ResponseDto();
             _productRepository = productRepository;
+            _mapper = mapper;
         }
 
-        [HttpGet("get-product")]
-        [Authorize(Policy = ("RequireUserRole"))]
+        [Authorize(Roles = "User")]
+        [HttpGet("get-product")]        
         public async Task<object> GetProduct([FromQuery] string keySearch)
         {
             try
             {
                 IEnumerable<ProductDto> productDtos = await _productRepository.GetProducts(keySearch);
-                _response.Data = productDtos;
+                _response.Data = _mapper.Map<IEnumerable<Product>>(productDtos);
                 _response.Status = (int)HttpStatusCode.OK;
                 _response.Message = "OK";
             }
             catch (Exception ex)
             {
                 _response.Message = ex.Message;
-            }
-            return _response;
-        }
-
-        [HttpPost("find-product-by-id/{id}")]
-        public async Task<object> FindProductById([FromRoute] int id)
-        {
-            try
-            {
-                ProductDto productDtos = await _productRepository.GetProductById(id);
-                _response.Data = productDtos;
-                _response.Status = (int)HttpStatusCode.OK;
-                _response.Message = "OK";
-            }
-            catch (Exception ex)
-            {
-                _response.Message = ex.Message;
-                _response.Status = (int)HttpStatusCode.BadRequest;
-                _response.Data = new object[0];
             }
             return _response;
         }
@@ -61,10 +45,19 @@ namespace shoe_shop_productAPI.Controllers
         {
             try
             {
-                ProductDto productDtos = await _productRepository.CreateProduct(productDto);
-                _response.Data = productDtos;
-                _response.Status = (int)HttpStatusCode.OK;
-                _response.Message = "OK";
+                int check = await _productRepository.CreateProduct(productDto);
+                if(check > 0)
+                {
+                    _response.Data = _mapper.Map<Product>(productDto);
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "OK";
+                }
+                else
+                {
+                    _response.Data = new object[0];
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "OK";
+                }
             }
             catch (Exception ex)
             {
