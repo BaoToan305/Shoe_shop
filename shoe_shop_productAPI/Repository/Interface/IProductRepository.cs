@@ -4,8 +4,10 @@ namespace shoe_shop_productAPI.Repository.Interface
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<ProductDto>> GetProducts(string keysearch);
-
+        Task<IEnumerable<ProductDto>> GetProducts(string keysearch,int page,int limit);
+       
         Task<int> CreateProduct(ProductDto productDto);
+        Task<IEnumerable<ProductDto>> GetTotalRecords();
+
     }
 }

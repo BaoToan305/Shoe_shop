@@ -9,6 +9,8 @@
         public static string SP_GET_ORDER_DETAIL = "sp_get_order_detail";
         public static string SP_GET_ORDER_DETAIL_BY_ID = "sp_get_order_detail_by_id";
         public static string SP_UPDATE_JWT_TOKEN = "sp_update_jwt_token";
+        public static string SP_UPLOAD_IMAGE = "sp_upload_image";
+        public static string SP_GET_PRODUCTS = "sp_get_products";
 
     }
 }

@@ -13,31 +13,55 @@ namespace shoe_shop_productAPI.Controllers
     public class ProductsController : ControllerBase
     {
         protected ResponseDto _response;
+        protected ResponseDtoPagin responsePagin;
         private IProductRepository _productRepository;
         private IMapper _mapper;
         public ProductsController(IProductRepository productRepository, IMapper mapper)
         {
             _response = new ResponseDto();
+            responsePagin = new ResponseDtoPagin();
             _productRepository = productRepository;
             _mapper = mapper;
         }
 
-        [Authorize(Roles = "User")]
-        [HttpGet("get-product")]        
-        public async Task<object> GetProduct([FromQuery] string keySearch)
+        //[Authorize(Roles = "User")]
+        [HttpGet("get-product")]
+        public async Task<ResponseDtoPagin> GetProduct([FromQuery] string keySearch, [FromQuery] int page = 1, [FromQuery] int limits = 10)
         {
+            var response = new ResponseDtoPagin();
+
             try
             {
-                IEnumerable<ProductDto> productDtos = await _productRepository.GetProducts(keySearch);
-                _response.Data = _mapper.Map<IEnumerable<Product>>(productDtos);
-                _response.Status = (int)HttpStatusCode.OK;
-                _response.Message = "OK";
+                // Gọi repository với keySearch, page, và limits
+                var products = await _productRepository.GetProducts(keySearch, page, limits);
+
+                // Tính tổng số bản ghi
+                var totalRecords = await _productRepository.GetTotalRecords();
+
+                // Đặt thông tin vào ResponseDtoPagin
+               
+                var data = new DataPaginTion
+                {
+                    limit = limits,
+                    total_recore = totalRecords.Count(),
+                    List = _mapper.Map<List<object>>(products)
+                };
+                response.Data = data;
+                response.Status = (int)HttpStatusCode.OK;
+                response.Message = "OK";
             }
             catch (Exception ex)
             {
-                _response.Message = ex.Message;
+                // Bắt lỗi và trả về thông báo lỗi
+                response.Status = (int)HttpStatusCode.InternalServerError;
+                response.Message = ex.Message;
+                response.Data = new DataPaginTion
+                {
+                    List = new List<object>() 
+                };
             }
-            return _response;
+
+            return response;
         }
 
         [HttpPost("create-product")]

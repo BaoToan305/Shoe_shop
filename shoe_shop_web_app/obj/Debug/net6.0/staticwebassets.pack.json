@@ -1,0 +1,661 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\shoe_shop_web_app.bundle.scp.css",
+      "PackagePath": "staticwebassets\\shoe_shop_web_app.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\aos.css",
+      "PackagePath": "staticwebassets\\css\\aos.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\bootstrap-datepicker.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\css\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\css\\css\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\jquery.timepicker.css",
+      "PackagePath": "staticwebassets\\css\\jquery.timepicker.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\daihyico.ico",
+      "PackagePath": "staticwebassets\\daihyico.ico"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\backup.txt",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\backup.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\icomoon\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\icomoon\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\icomoon\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\icomoon\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\css\\_ionicons.scss",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\css\\_ionicons.scss"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.woff2"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\open-iconic\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\open-iconic\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\open-iconic\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\open-iconic\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\fonts\\open-iconic\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\Contact_img.jpeg",
+      "PackagePath": "staticwebassets\\images\\Contact_img.jpeg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\about.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\bg_1.png",
+      "PackagePath": "staticwebassets\\images\\bg_1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\bg_2.png",
+      "PackagePath": "staticwebassets\\images\\bg_2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\bg_6.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_6.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\choose-1.jpg",
+      "PackagePath": "staticwebassets\\images\\choose-1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\choose-2.jpg",
+      "PackagePath": "staticwebassets\\images\\choose-2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\choose-3.jpg",
+      "PackagePath": "staticwebassets\\images\\choose-3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-4.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-5.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-6.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\image_1.jpg",
+      "PackagePath": "staticwebassets\\images\\image_1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\image_2.jpg",
+      "PackagePath": "staticwebassets\\images\\image_2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\image_3.jpg",
+      "PackagePath": "staticwebassets\\images\\image_3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\image_5.jpg",
+      "PackagePath": "staticwebassets\\images\\image_5.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\image_6.jpg",
+      "PackagePath": "staticwebassets\\images\\image_6.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\images\\person_1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\images\\person_2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\images\\person_3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\images\\person_4.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\prod-1.png",
+      "PackagePath": "staticwebassets\\images\\prod-1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\prod-2.png",
+      "PackagePath": "staticwebassets\\images\\prod-2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-1.png",
+      "PackagePath": "staticwebassets\\images\\product-1.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-2.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-2.png",
+      "PackagePath": "staticwebassets\\images\\product-2.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-3.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-3.png",
+      "PackagePath": "staticwebassets\\images\\product-3.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-4.jpg",
+      "PackagePath": "staticwebassets\\images\\product-4.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-4.png",
+      "PackagePath": "staticwebassets\\images\\product-4.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-5.png",
+      "PackagePath": "staticwebassets\\images\\product-5.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-6.png",
+      "PackagePath": "staticwebassets\\images\\product-6.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-7.png",
+      "PackagePath": "staticwebassets\\images\\product-7.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\images\\product-8.png",
+      "PackagePath": "staticwebassets\\images\\product-8.png"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\aos.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\google-map.js",
+      "PackagePath": "staticwebassets\\js\\google-map.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery-migrate-3.0.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.animateNumber.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.animateNumber.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\range.js",
+      "PackagePath": "staticwebassets\\js\\range.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\scrollax.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollax.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projects\\Shoe_shop\\shoe_shop_web_app\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.shoe_shop_web_app.props",
+      "PackagePath": "build\\shoe_shop_web_app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.shoe_shop_web_app.props",
+      "PackagePath": "buildMultiTargeting\\shoe_shop_web_app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.shoe_shop_web_app.props",
+      "PackagePath": "buildTransitive\\shoe_shop_web_app.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.shoe_shop_web_app.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

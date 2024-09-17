@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shoe_shop_productAPI", "sho
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{41F1AB1F-3AA8-4451-9B27-836592A03610}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web-App", "Web-App", "{71DF9F52-6AC9-48FF-A13B-1F5407AD73E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "shoe_shop_web_app", "shoe_shop_web_app\shoe_shop_web_app.csproj", "{5443FEF9-D0CC-46A2-AFB7-386799974D2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{41F1AB1F-3AA8-4451-9B27-836592A03610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41F1AB1F-3AA8-4451-9B27-836592A03610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41F1AB1F-3AA8-4451-9B27-836592A03610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5443FEF9-D0CC-46A2-AFB7-386799974D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5443FEF9-D0CC-46A2-AFB7-386799974D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5443FEF9-D0CC-46A2-AFB7-386799974D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5443FEF9-D0CC-46A2-AFB7-386799974D2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2CC701B7-DFDF-40F1-BEF6-9C5C149406C3} = {D4B9E79A-BDB8-4282-866D-A26AEDC4D1B7}
+		{5443FEF9-D0CC-46A2-AFB7-386799974D2C} = {71DF9F52-6AC9-48FF-A13B-1F5407AD73E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34304B7B-45FD-4514-8D82-27292B8D057C}

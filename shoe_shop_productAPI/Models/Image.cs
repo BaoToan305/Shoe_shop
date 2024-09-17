@@ -13,6 +13,7 @@ namespace shoe_shop_productAPI.Models
         public string? image_extention { get; set; }
         public string? image_path { get; set;}
         public long image_size { get; set; }
+        public long product_image_id { get; set; }
 
     }
 }

@@ -30,11 +30,34 @@ namespace shoe_shop_productAPI.Repository
             return rowAffected;
         }
 
-        public async Task<IEnumerable<ProductDto>> GetProducts(string keysearch)
+        public async Task<IEnumerable<ProductDto>> GetProducts(string keysearch, int page, int limits)
         {
             using IDbConnection connection = _dapperContext.CreateConnection();
-            if (string.IsNullOrEmpty(keysearch)) { keysearch = ""; }
-            var products = await connection.QueryAsync<ProductDto>(StoreProceductLinks.SP_PRODUCTS, new { keysearch }, commandType: CommandType.StoredProcedure);
+
+            // Đảm bảo tham số keysearch không bị null
+            if (string.IsNullOrEmpty(keysearch))
+            {
+                keysearch = "";
+            }
+
+            // Tính toán offset dựa trên trang hiện tại (page)
+            int offset = (page - 1) * limits;
+
+            // Gọi stored procedure với các tham số keysearch, offset, và limits
+            var products = await connection.QueryAsync<ProductDto>(
+                StoreProceductLinks.SP_PRODUCTS,
+                new { keysearch, limits , offset },
+                commandType: CommandType.StoredProcedure
+            );
+
+            // Trả về danh sách đã được ánh xạ sang ProductDto
+            return _mapper.Map<List<ProductDto>>(products);
+        }
+
+        public async Task<IEnumerable<ProductDto>> GetTotalRecords()
+        {
+            using IDbConnection connection = _dapperContext.CreateConnection();
+            var products = await connection.QueryAsync<ProductDto>(StoreProceductLinks.SP_GET_PRODUCTS, commandType: CommandType.StoredProcedure);
             return _mapper.Map<List<ProductDto>>(products);
         }
     }

@@ -78,6 +78,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 builder.Services.AddScoped<IImageRespository, LocalImageRespository>();
 builder.Services.AddScoped<IOrderDetailRespository, OrderDetailRespository>();
+
 builder.Services.AddControllers();
 var app = builder.Build();
 
@@ -92,14 +93,14 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"Images")),
-    RequestPath = "/Imagesv"
+    RequestPath = "/Images"
 });
 
 app.UseCors(builder => builder
+.WithOrigins("http://localhost:3000")
      .AllowAnyOrigin()
      .AllowAnyMethod()
      .AllowAnyHeader());
-
 app.UseAuthentication();
 app.UseAuthorization();
 

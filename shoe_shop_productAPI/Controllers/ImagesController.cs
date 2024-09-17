@@ -38,7 +38,7 @@ namespace shoe_shop_productAPI.Controllers
 
         [HttpPost]
         [Route("Upload")]
-        public async Task<object> Upload([FromForm] ImageUploadRequestDto requestDto )
+        public async Task<object> Upload([FromForm] ImageUploadRequestDto requestDto , [FromForm] string productId)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace shoe_shop_productAPI.Controllers
                         image_extention = Path.GetExtension(requestDto.File.FileName)
                     };
 
-                    await _imageRespository.Upload(imageModel);
+                    await _imageRespository.Upload(imageModel, productId);
 
                     ImageResponse response = new ImageResponse
                     {
