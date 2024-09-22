@@ -1,4 +1,8 @@
-﻿@{
+﻿@model IPagedList<shoe_shop_web_app.Response.ProductsModel>
+@using PagedList
+@using shoe_shop_web_app.Response;
+
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -146,34 +150,58 @@
 
             <!-- Product Grid -->
             <div class="col-md-10">
-                <div class="d-flex flex-wrap">
-                    <div class="product-card col-md-3 col-sm-6 mb-3">
-                        <a class="img-prod">
-                            <img src="~/images/product-1.png" class="img-fluid product-image" alt="Product Image">
-                        </a>
-                        <div class="hover-overlay">
-                            <button class="btn btn-dark add-to-cart-btn">THÊM VÀO GIỎ</button>
-                            <button class="btn btn-light buy-now-btn">MUA NGAY</button>
-                        </div>
-                        <div class="product-info">
-                            <h5 class="product-title">NIKE FREE RN 2019 ID</h5>
-                            <p class="product-price">1.020.000đ</p>
-                        </div>
+                <div class="row">
+                    <div class="d-flex flex-wrap">
+                        @if (Model != null)
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <div class="product-card col-md-3 col-sm-6 mb-3">
+                                    <a class="img-prod">
+                                        <img src="~/images/product-1.png" class="img-fluid product-image" alt="Product Image">
+                                    </a>
+                                    <div class="hover-overlay">
+                                        <button class="btn btn-dark add-to-cart-btn">THÊM VÀO GIỎ</button>
+                                        <button class="btn btn-light buy-now-btn">MUA NGAY</button>
+                                    </div>
+                                    <div class="product-info">
+                                        <h5 class="product-title">@item.product_name</h5>
+                                        <p class="product-price">@item.product_price.ToString()</p>
+                                    </div>
+                                </div>
+                            }
+                        }
                     </div>
                 </div>
-                <div class="page">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                        </ul>
-                    </nav>
+                <div class="pagination-details">
+                    <p>Current Page: @ViewBag.CurrentPage</p>
+                    <p>Total Pages: @ViewBag.TotalPages</p>
                 </div>
-            </div>
-            
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        @if (Model.HasPreviousPage)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= Model.PageCount; i++)
+                        {
+                            <li class="page-item @(Model.PageNumber == i ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                            </li>
+                        }
+
+                        @if (Model.HasNextPage)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            </div>           
         </div>
     </div>
 </section>

@@ -10,9 +10,14 @@ namespace shoe_shop_web_app.Response
         [JsonProperty(PropertyName = "message")]
         public string? Message { get; set; }
         [JsonProperty(PropertyName = "data")]
-        public List<ProductsModel> Data { get; set; }
+        public ProductsData Data { get; set; }
     }
-
+    public class ProductsData
+    {
+        public long limit { get; set; }
+        public long total_recore { get; set; }
+        public List<ProductsModel>? list { get; set; }
+    }
     public class ProductsModel
     {
         public int product_id { get; set; } = 0;

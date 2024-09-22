@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
@@ -28,7 +27,6 @@ namespace shoe_shop_productAPI.Controllers
         [HttpGet("get-product")]
         public async Task<ResponseDtoPagin> GetProduct([FromQuery] string keySearch, [FromQuery] int page = 1, [FromQuery] int limits = 10)
         {
-            var response = new ResponseDtoPagin();
 
             try
             {
@@ -39,38 +37,91 @@ namespace shoe_shop_productAPI.Controllers
                 var totalRecords = await _productRepository.GetTotalRecords();
 
                 // Đặt thông tin vào ResponseDtoPagin
-               
+
                 var data = new DataPaginTion
                 {
                     limit = limits,
                     total_recore = totalRecords.Count(),
                     List = _mapper.Map<List<object>>(products)
                 };
-                response.Data = data;
-                response.Status = (int)HttpStatusCode.OK;
-                response.Message = "OK";
+                responsePagin.Data = data;
+                responsePagin.Status = (int)HttpStatusCode.OK;
+                responsePagin.Message = "OK";
             }
             catch (Exception ex)
             {
                 // Bắt lỗi và trả về thông báo lỗi
-                response.Status = (int)HttpStatusCode.InternalServerError;
-                response.Message = ex.Message;
-                response.Data = new DataPaginTion
+                responsePagin.Status = (int)HttpStatusCode.InternalServerError;
+                responsePagin.Message = ex.Message;
+                responsePagin.Data = new DataPaginTion
                 {
-                    List = new List<object>() 
+                    List = new List<object>()
                 };
             }
 
-            return response;
+            return responsePagin;
         }
 
+        [HttpPost("delete-product/{id}")]
+        public async Task<object> DeleteProduct([FromRoute] int id)
+        {
+            try
+            {
+                int check = await _productRepository.DeleteProduct(id);
+                if (check > 0)
+                {
+                    _response.Data = new object[0];
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "OK";
+                }
+                else
+                {
+                    _response.Data = new object[0];
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "Lỗi";
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.Message = ex.Message;
+                _response.Data = new object[0];
+            }
+            return _response;
+        }
+
+        [HttpPost("update-product")]
+        public async Task<object> UpdateProduct([FromBody] ProductDto product)
+        {
+            try
+            {
+                int check = await _productRepository.UpdateProduct(product);
+                if (check > 0)
+                {
+                    _response.Data = new object[0];
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "OK";
+                }
+                else
+                {
+                    _response.Data = new object[0];
+                    _response.Status = (int)HttpStatusCode.OK;
+                    _response.Message = "Lỗi";
+                }
+            }
+            catch (Exception ex)
+            {
+                _response.Message = ex.Message;
+                _response.Data = new object[0];
+            }
+            return _response;
+        }
         [HttpPost("create-product")]
         public async Task<object> CreateProduct([FromBody] ProductDto productDto)
         {
             try
             {
                 int check = await _productRepository.CreateProduct(productDto);
-                if(check > 0)
+                if (check > 0)
                 {
                     _response.Data = _mapper.Map<Product>(productDto);
                     _response.Status = (int)HttpStatusCode.OK;
@@ -80,7 +131,7 @@ namespace shoe_shop_productAPI.Controllers
                 {
                     _response.Data = new object[0];
                     _response.Status = (int)HttpStatusCode.OK;
-                    _response.Message = "OK";
+                    _response.Message = "Lỗi";
                 }
             }
             catch (Exception ex)

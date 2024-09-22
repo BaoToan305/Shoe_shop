@@ -33,3 +33,6 @@ D:\Projects\Shoe_shop\shoe_shop_web_app\obj\Debug\net6.0\shoe_shop_web_app.cspro
 D:\Projects\Shoe_shop\shoe_shop_web_app\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Projects\Shoe_shop\shoe_shop_web_app\bin\Debug\net6.0\RestSharp.dll
 D:\Projects\Shoe_shop\shoe_shop_web_app\obj\Debug\net6.0\shoe_sho.2D758FBA.Up2Date
+D:\Projects\Shoe_shop\shoe_shop_web_app\bin\Debug\net6.0\PagedList.dll
+D:\Projects\Shoe_shop\shoe_shop_web_app\bin\Debug\net6.0\PagedList.Mvc.dll
+D:\Projects\Shoe_shop\shoe_shop_web_app\bin\Debug\net6.0\X.PagedList.dll

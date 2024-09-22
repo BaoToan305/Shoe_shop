@@ -11,6 +11,8 @@
         public static string SP_UPDATE_JWT_TOKEN = "sp_update_jwt_token";
         public static string SP_UPLOAD_IMAGE = "sp_upload_image";
         public static string SP_GET_PRODUCTS = "sp_get_products";
+        public static string SP_DELETE_PRODUCTS = "sp_delete_product";
+        public static string SP_UPDATE_PRODUCTS = "sp_update_product";
 
     }
 }

@@ -3,7 +3,6 @@ using Dapper;
 using Microsoft.EntityFrameworkCore;
 using shoe_shop_productAPI.DbContexts;
 using shoe_shop_productAPI.Helper;
-using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
 using shoe_shop_productAPI.Repository.Interface;
 using System.Data;
@@ -46,7 +45,7 @@ namespace shoe_shop_productAPI.Repository
             // Gọi stored procedure với các tham số keysearch, offset, và limits
             var products = await connection.QueryAsync<ProductDto>(
                 StoreProceductLinks.SP_PRODUCTS,
-                new { keysearch, limits , offset },
+                new { keysearch, limits, offset },
                 commandType: CommandType.StoredProcedure
             );
 
@@ -59,6 +58,28 @@ namespace shoe_shop_productAPI.Repository
             using IDbConnection connection = _dapperContext.CreateConnection();
             var products = await connection.QueryAsync<ProductDto>(StoreProceductLinks.SP_GET_PRODUCTS, commandType: CommandType.StoredProcedure);
             return _mapper.Map<List<ProductDto>>(products);
+        }
+
+        public async Task<int> UpdateProduct(ProductDto product)
+        {
+            using IDbConnection connection = _dapperContext.CreateConnection();
+            var dtos = await connection.ExecuteAsync(StoreProceductLinks.SP_UPDATE_PRODUCTS,
+                new
+                {
+                    productId = product.product_id,
+                    name = product.product_name,
+                    price = product.product_price,
+                    cate_id = product.product_cate_id
+                },
+                commandType: CommandType.StoredProcedure);
+            return dtos;
+        }
+
+        public async Task<int> DeleteProduct(int id)
+        {
+            using IDbConnection connection = _dapperContext.CreateConnection();
+            var dtos = await connection.ExecuteAsync(StoreProceductLinks.SP_DELETE_PRODUCTS, new { id = id }, commandType: CommandType.StoredProcedure);
+            return dtos;
         }
     }
 }

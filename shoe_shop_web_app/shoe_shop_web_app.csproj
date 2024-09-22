@@ -10,13 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Controllers\HomeController.cs~RF10091c72.TMP" />
     <None Remove="Controllers\HomeController.cs~RF317a42.TMP" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="PagedList.Mvc" Version="4.0.0" />
     <PackageReference Include="RestSharp" Version="112.0.0" />
+    <PackageReference Include="X.PagedList" Version="10.0.3" />
   </ItemGroup>
 
 </Project>
