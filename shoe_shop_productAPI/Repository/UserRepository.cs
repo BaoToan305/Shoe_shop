@@ -2,11 +2,11 @@
 using Dapper;
 using Microsoft.EntityFrameworkCore;
 using shoe_shop_productAPI.DbContexts;
+using shoe_shop_productAPI.Helper;
 using shoe_shop_productAPI.Models;
 using shoe_shop_productAPI.Models.Dto;
-using System.Data;
-using shoe_shop_productAPI.Helper;
 using shoe_shop_productAPI.Repository.Interface;
+using System.Data;
 namespace shoe_shop_productAPI.Repository
 {
     public class UserRepository : IUserRepository
@@ -21,9 +21,11 @@ namespace shoe_shop_productAPI.Repository
             _mapper = mapper;
         }
 
-        public async Task<User> GetUserToCheckAsync(string name,string password)
+        public async Task<User> GetUserToCheckAsync(string name, string password)
         {
-           User user = await _db.Users.FirstOrDefaultAsync(x => x.user_name == name && x.user_password == password);
+            var user = await _db.Users
+     .FirstOrDefaultAsync(x => (x.user_name ?? string.Empty) == name
+                           && (x.user_password ?? string.Empty) == password);
             return user;
         }
 
@@ -40,7 +42,7 @@ namespace shoe_shop_productAPI.Repository
                 return null;
             }
         }
-        
+
         public async Task<int> RegisterUser(UserDto userDto)
         {
             using IDbConnection connection = _dapperContext.CreateConnection();
@@ -51,7 +53,7 @@ namespace shoe_shop_productAPI.Repository
         public async Task<int> UpdateJwtToken(string token, int userId)
         {
             using IDbConnection connection = _dapperContext.CreateConnection();
-            int rowAffected = await connection.ExecuteAsync(StoreProceductLinks.SP_UPDATE_JWT_TOKEN,new  { token = token, userId = userId }, commandType: CommandType.StoredProcedure);
+            int rowAffected = await connection.ExecuteAsync(StoreProceductLinks.SP_UPDATE_JWT_TOKEN, new { token = token, userId = userId }, commandType: CommandType.StoredProcedure);
             return rowAffected;
         }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("shoe_shop_productAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb884243cbc0a9560423c072ed01f70d7926d2db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89bd7f510d1a51a522e690f5b703716b7e198347")]
 [assembly: System.Reflection.AssemblyProductAttribute("shoe_shop_productAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("shoe_shop_productAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
